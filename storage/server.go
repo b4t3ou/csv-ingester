@@ -52,6 +52,7 @@ func (s *Server) Save(ctx context.Context, req *pb.StorageRequest) (*pb.StorageR
 	for _, record := range req.Items {
 		err := s.db.Save(Record{
 			ID:           record.Id,
+			Name:         record.Name,
 			Email:        record.Email,
 			MobileNumber: record.MobileNumber,
 		})

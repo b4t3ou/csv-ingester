@@ -12,10 +12,12 @@ message StorageRequest {
 
 message Item {
   string id = 1;
-  string email = 2;
-  string mobile_number = 3;
+  string name = 2;
+  string email = 3;
+  string mobile_number = 4;
 }
 
 message StorageReply {
-  string error = 1;
+  repeated string errors = 1;
+  repeated string processed = 2;
 }

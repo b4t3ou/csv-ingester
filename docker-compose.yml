@@ -11,6 +11,15 @@ services:
       - SERVER_HOST=storage-server
       - SERVICE_TYPE=server
 
+  storage-client:
+    build:
+      context: .
+      dockerfile: "Dockerfile"
+    environment:
+    - PORT=3000
+    - SERVER_HOST=storage-server
+    - SERVICE_TYPE=client
+
   localstack:
     image: localstack/localstack:0.8.2
     ports:

@@ -8,6 +8,7 @@ type DBInterface interface {
 // Record is representing a record int the database
 type Record struct {
 	ID           string `json:"id,omitempty"`
+	Name         string `json:"name,omitempty"`
 	Email        string `json:"email,omitempty"`
 	MobileNumber string `json:"mobile_number,omitempty"`
 	// TODO add validator
