@@ -1,0 +1,84 @@
+hash: a0415420d0d205788741a453c7b5c361b92335fa8feb73f0d316c0a383fd137e
+updated: 2018-09-17T22:05:53.06062906+01:00
+imports:
+- name: github.com/caarlos0/env
+  version: 1cddc31c48c56ecd700d873edb9fd5b6f5df922a
+- name: github.com/go-playground/locales
+  version: f63010822830b6fe52288ee52d5a1151088ce039
+  subpackages:
+  - currency
+- name: github.com/go-playground/universal-translator
+  version: 71201497bace774495daed26a3874fd339e0b538
+- name: github.com/golang/protobuf
+  version: aa810b61a9c79d51363740d207bb46cf8e620ed5
+  subpackages:
+  - proto
+  - protoc-gen-go/descriptor
+  - ptypes
+  - ptypes/any
+  - ptypes/duration
+  - ptypes/timestamp
+- name: github.com/rs/zerolog
+  version: 77db4b4f350e31be66a57c332acb7721cf9ff9bb
+  subpackages:
+  - internal/cbor
+  - internal/json
+  - log
+- name: golang.org/x/net
+  version: 26e67e76b6c3f6ce91f7c52def5af501b4e0f3a2
+  subpackages:
+  - context
+  - http/httpguts
+  - http2
+  - http2/hpack
+  - idna
+  - internal/timeseries
+  - trace
+- name: golang.org/x/sys
+  version: d0be0721c37eeb5299f245a996a483160fc36940
+  subpackages:
+  - unix
+- name: golang.org/x/text
+  version: 905a57155faa8230500121607930ebb9dd8e139c
+  subpackages:
+  - secure/bidirule
+  - transform
+  - unicode/bidi
+  - unicode/norm
+- name: google.golang.org/genproto
+  version: 4b56f30a1fd96a133a036b62cdd2a249883dd89b
+  subpackages:
+  - googleapis/rpc/status
+- name: google.golang.org/grpc
+  version: 8dea3dc473e90c8179e519d91302d0597c0ca1d1
+  subpackages:
+  - balancer
+  - balancer/base
+  - balancer/roundrobin
+  - codes
+  - connectivity
+  - credentials
+  - encoding
+  - encoding/proto
+  - grpclog
+  - internal
+  - internal/backoff
+  - internal/channelz
+  - internal/envconfig
+  - internal/grpcrand
+  - internal/transport
+  - keepalive
+  - metadata
+  - naming
+  - peer
+  - reflection
+  - reflection/grpc_reflection_v1alpha
+  - resolver
+  - resolver/dns
+  - resolver/passthrough
+  - stats
+  - status
+  - tap
+- name: gopkg.in/go-playground/validator.v9
+  version: e69e9a28bb62b977fdc58d051f1bb477b7cbe486
+testImports: []

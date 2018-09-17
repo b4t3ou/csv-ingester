@@ -1,16 +1,21 @@
 package: github.com/b4t3ou/csv-ingester
 import:
 - package: github.com/caarlos0/env
+  version: ^3.3.0
 - package: github.com/golang/protobuf
+  version: ^1.2.0
   subpackages:
   - proto
 - package: github.com/rs/zerolog
+  version: ^1.8.0
   subpackages:
   - log
 - package: golang.org/x/net
   subpackages:
   - context
 - package: google.golang.org/grpc
+  version: ^1.15.0
   subpackages:
   - reflection
 - package: gopkg.in/go-playground/validator.v9
+  version: ^9.21.0
