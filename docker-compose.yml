@@ -1,0 +1,19 @@
+version: '2'
+services:
+  storage-server:
+    build:
+      context: .
+      dockerfile: "Dockerfile"
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - SERVER_HOST=storage-server
+      - SERVICE_TYPE=server
+
+  localstack:
+    image: localstack/localstack:0.8.2
+    ports:
+      - "4569:4569"
+    environment:
+      - SERVICES=dynamodb:4569,
