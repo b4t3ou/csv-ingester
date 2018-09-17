@@ -1,0 +1,16 @@
+package: github.com/b4t3ou/csv-ingester
+import:
+- package: github.com/caarlos0/env
+- package: github.com/golang/protobuf
+  subpackages:
+  - proto
+- package: github.com/rs/zerolog
+  subpackages:
+  - log
+- package: golang.org/x/net
+  subpackages:
+  - context
+- package: google.golang.org/grpc
+  subpackages:
+  - reflection
+- package: gopkg.in/go-playground/validator.v9

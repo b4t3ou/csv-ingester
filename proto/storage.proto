@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package storage;
+
+service Storage {
+  rpc Save (StorageRequest) returns (StorageReply) {}
+}
+
+message StorageRequest {
+  repeated Item items = 1;
+}
+
+message Item {
+  string id = 1;
+  string email = 2;
+  string mobile_number = 3;
+}
+
+message StorageReply {
+  string error = 1;
+}
