@@ -10,6 +10,9 @@ services:
       - PORT=3000
       - SERVER_HOST=storage-server
       - SERVICE_TYPE=server
+      - DYNAMO_ENDPOINT="localstack:4569"
+      - AWS_ACCESS_KEY_ID="test"
+      - AWS_SECRET_ACCESS_KEY="test"
 
   storage-client:
     build:

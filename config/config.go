@@ -7,9 +7,10 @@ import (
 
 // Config is the config struct
 type Config struct {
-	Port        string `env:"PORT" validate:"required"`
-	ServerHost  string `env:"SERVER_HOST" validate:"required"`
-	ServiceType string `env:"SERVICE_TYPE" validate:"required"`
+	Port           string `env:"PORT" validate:"required"`
+	ServerHost     string `env:"SERVER_HOST" validate:"required"`
+	ServiceType    string `env:"SERVICE_TYPE" validate:"required"`
+	DynamoEndpoint string `env:"DYNAMO_ENDPOINT"`
 }
 
 // New returns with a new Cfg object

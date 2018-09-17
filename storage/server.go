@@ -57,8 +57,11 @@ func (s *Server) Save(ctx context.Context, req *pb.StorageRequest) (*pb.StorageR
 			MobileNumber: record.MobileNumber,
 		})
 		if err != nil {
-			return nil, err
+			log.Error().Err(err).Msg("failed to save data")
+			continue
 		}
+
+		log.Info().Interface("record", record).Msg("record has been saved")
 	}
 
 	return &pb.StorageReply{}, nil

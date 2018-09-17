@@ -1,8 +1,44 @@
-hash: a0415420d0d205788741a453c7b5c361b92335fa8feb73f0d316c0a383fd137e
-updated: 2018-09-17T22:05:53.06062906+01:00
+hash: fbe2d9fa08fa47c129c5b415c8be4f9f9002c45967fb6b9c7adf7dd83f343f78
+updated: 2018-09-18T00:08:57.115046994+01:00
 imports:
+- name: github.com/aws/aws-sdk-go
+  version: 34699de98eac41fa94737f6ce7b83d7a621c2634
+  subpackages:
+  - aws
+  - aws/awserr
+  - aws/awsutil
+  - aws/client
+  - aws/client/metadata
+  - aws/corehandlers
+  - aws/credentials
+  - aws/credentials/ec2rolecreds
+  - aws/credentials/endpointcreds
+  - aws/credentials/stscreds
+  - aws/csm
+  - aws/defaults
+  - aws/ec2metadata
+  - aws/endpoints
+  - aws/request
+  - aws/session
+  - aws/signer/v4
+  - internal/sdkio
+  - internal/sdkrand
+  - internal/sdkuri
+  - internal/shareddefaults
+  - private/protocol
+  - private/protocol/json/jsonutil
+  - private/protocol/jsonrpc
+  - private/protocol/query
+  - private/protocol/query/queryutil
+  - private/protocol/rest
+  - private/protocol/xml/xmlutil
+  - service/dynamodb
+  - service/dynamodb/dynamodbattribute
+  - service/sts
 - name: github.com/caarlos0/env
   version: 1cddc31c48c56ecd700d873edb9fd5b6f5df922a
+- name: github.com/go-ini/ini
+  version: fa25069db393aecc09b71267d0489b357781c860
 - name: github.com/go-playground/locales
   version: f63010822830b6fe52288ee52d5a1151088ce039
   subpackages:
@@ -18,12 +54,16 @@ imports:
   - ptypes/any
   - ptypes/duration
   - ptypes/timestamp
+- name: github.com/jmespath/go-jmespath
+  version: c2b33e8439af944379acbdd9c3a5fe0bc44bd8a5
 - name: github.com/rs/zerolog
   version: 77db4b4f350e31be66a57c332acb7721cf9ff9bb
   subpackages:
   - internal/cbor
   - internal/json
   - log
+- name: github.com/satori/go.uuid
+  version: f58768cc1a7a7e77a3bd49e98cdd21419399b6a3
 - name: golang.org/x/net
   version: 26e67e76b6c3f6ce91f7c52def5af501b4e0f3a2
   subpackages:

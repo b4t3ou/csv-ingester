@@ -10,6 +10,7 @@ func TestMemory_Save(t *testing.T) {
 	memory := NewMemory()
 	memory.Save(storage.Record{
 		ID:           "1",
+		Name:         "foo bar",
 		Email:        "test@test.com",
 		MobileNumber: "1235",
 	})
