@@ -1,3 +1,5 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/b4t3ou/csv-ingester)](https://goreportcard.com/report/github.com/b4t3ou/csv-ingester)
+
 # csv-ingester
 
 This is a small project where we have a storage application and a client communicating
